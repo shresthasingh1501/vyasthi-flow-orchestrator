@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -17,15 +16,18 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background floating-elements">
       {/* Hero Section */}
       <section className="min-h-screen flex items-center justify-center gradient-daylight-subtle relative overflow-hidden">
         <div className="container max-w-4xl text-center px-4 animate-fade-in-up">
           <h1 className="text-5xl md:text-7xl font-light mb-6 text-foreground tracking-tight">
             Vyasthi
           </h1>
-          <p className="text-xl md:text-2xl font-light mb-8 text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl font-light mb-4 text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             Your life, in flow.
+          </p>
+          <p className="text-lg md:text-xl font-light mb-8 text-primary/80 max-w-2xl mx-auto leading-relaxed italic">
+            Living Through Your Mind
           </p>
           <p className="text-lg md:text-xl mb-12 text-foreground max-w-3xl mx-auto leading-relaxed font-light">
             A proactive AI that gently orchestrates your day, supports your well-being, and acts on your behalf. All with a privacy you can feel, not just trust.
