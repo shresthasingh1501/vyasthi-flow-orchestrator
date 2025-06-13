@@ -23,9 +23,6 @@ const Index = () => {
           <h1 className="text-5xl md:text-7xl font-light mb-6 text-foreground tracking-tight">
             Vyasthi
           </h1>
-          <p className="text-xl md:text-2xl font-light mb-4 text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Your life, in flow.
-          </p>
           <p className="text-lg md:text-xl font-light mb-8 text-primary/80 max-w-2xl mx-auto leading-relaxed italic">
             Living Through Your Mind
           </p>
