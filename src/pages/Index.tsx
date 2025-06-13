@@ -1,9 +1,10 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import { ArrowDown, Sparkles, Leaf, Book, MessageSquare, Calendar, Mail, FileText, Camera, Clock, Browser, FileSpreadsheet, Gift, Plane, ShoppingCart } from "lucide-react";
+import { ArrowDown, Sparkles, Leaf, Book, MessageSquare, Calendar, Mail, FileText, Camera, Clock, Globe, FileSpreadsheet, Gift, Plane, ShoppingCart, Phone, Video, Users } from "lucide-react";
 
 const Index = () => {
   const [email, setEmail] = useState("");
@@ -199,6 +200,58 @@ const Index = () => {
 
       <Separator className="my-16" />
 
+      {/* Advanced Replica Capabilities Section */}
+      <section className="py-24 px-4">
+        <div className="container max-w-6xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-light text-center mb-8 text-foreground">
+            Your digital twin in action.
+          </h2>
+          <p className="text-lg text-center mb-16 text-muted-foreground max-w-3xl mx-auto">
+            Vyasthi doesn't just know you—it becomes you. Attending meetings, making calls, and handling your digital presence with the authenticity that only comes from truly understanding who you are.
+          </p>
+          
+          <div className="grid md:grid-cols-3 gap-6">
+            <Card className="p-6 border-0 shadow-lg hover:shadow-xl transition-all duration-300">
+              <CardContent className="p-0 text-center space-y-4">
+                <div className="w-12 h-12 mx-auto bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                  <Video className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="text-lg font-semibold text-foreground">Meeting Attendance</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  Attends routine meetings as you, takes notes, asks your typical questions, and provides you with intelligent summaries and action items.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="p-6 border-0 shadow-lg hover:shadow-xl transition-all duration-300">
+              <CardContent className="p-0 text-center space-y-4">
+                <div className="w-12 h-12 mx-auto bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                  <Phone className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="text-lg font-semibold text-foreground">Voice Calls</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  Makes calls in your voice for appointments, reservations, and routine inquiries, handling conversations with your natural speaking patterns.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="p-6 border-0 shadow-lg hover:shadow-xl transition-all duration-300">
+              <CardContent className="p-0 text-center space-y-4">
+                <div className="w-12 h-12 mx-auto bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                  <Users className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="text-lg font-semibold text-foreground">Relationship Management</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  Maintains your relationships by sending thoughtful check-ins, remembering important dates, and following up on conversations in your authentic style.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      <Separator className="my-16" />
+
       {/* Productivity & Browser Integration Section */}
       <section className="py-24 px-4">
         <div className="container max-w-6xl mx-auto">
@@ -213,7 +266,7 @@ const Index = () => {
             <Card className="p-6 border-0 shadow-lg hover:shadow-xl transition-all duration-300">
               <CardContent className="p-0 text-center space-y-4">
                 <div className="w-12 h-12 mx-auto bg-primary/10 rounded-full flex items-center justify-center mb-4">
-                  <Browser className="w-6 h-6 text-primary" />
+                  <Globe className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-lg font-semibold text-foreground">Smart Browsing</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">
