@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import { ArrowDown, Sparkles, Leaf, Book } from "lucide-react";
+import { ArrowDown, Sparkles, Leaf, Book, MessageSquare, Calendar, Mail, FileText, Camera, Clock } from "lucide-react";
 
 const Index = () => {
   const [email, setEmail] = useState("");
@@ -52,6 +52,94 @@ const Index = () => {
             The endless tabs, the forgotten reminders, the constant weight of the everyday. 
             Vyasthi is designed to soften the edges of modern life, creating space for you to simply be.
           </p>
+        </div>
+      </section>
+
+      <Separator className="my-16" />
+
+      {/* How Vyasthi Learns Section */}
+      <section className="py-24 px-4">
+        <div className="container max-w-6xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-light text-center mb-8 text-foreground">
+            Learning from the rhythm of your life.
+          </h2>
+          <p className="text-lg text-center mb-16 text-muted-foreground max-w-3xl mx-auto">
+            Vyasthi understands you through the digital traces of your daily experience.
+          </p>
+          
+          <div className="grid md:grid-cols-3 gap-6">
+            <Card className="p-6 border-0 shadow-lg hover:shadow-xl transition-all duration-300">
+              <CardContent className="p-0 text-center space-y-4">
+                <div className="w-12 h-12 mx-auto bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                  <Mail className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="text-lg font-semibold text-foreground">Email Patterns</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  Your communication style, priorities, and relationships through email interactions.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="p-6 border-0 shadow-lg hover:shadow-xl transition-all duration-300">
+              <CardContent className="p-0 text-center space-y-4">
+                <div className="w-12 h-12 mx-auto bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                  <Calendar className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="text-lg font-semibold text-foreground">Calendar & Schedule</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  Your natural rhythms, meeting preferences, and how you structure your time.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="p-6 border-0 shadow-lg hover:shadow-xl transition-all duration-300">
+              <CardContent className="p-0 text-center space-y-4">
+                <div className="w-12 h-12 mx-auto bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                  <MessageSquare className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="text-lg font-semibold text-foreground">Voice & Messages</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  Your unique voice, tone, and the way you express thoughts and emotions.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="p-6 border-0 shadow-lg hover:shadow-xl transition-all duration-300">
+              <CardContent className="p-0 text-center space-y-4">
+                <div className="w-12 h-12 mx-auto bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                  <FileText className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="text-lg font-semibold text-foreground">Documents & Notes</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  Your thinking patterns, project approaches, and knowledge organization.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="p-6 border-0 shadow-lg hover:shadow-xl transition-all duration-300">
+              <CardContent className="p-0 text-center space-y-4">
+                <div className="w-12 h-12 mx-auto bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                  <Camera className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="text-lg font-semibold text-foreground">Photos & Memories</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  Important moments, relationships, and what you choose to capture and remember.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="p-6 border-0 shadow-lg hover:shadow-xl transition-all duration-300">
+              <CardContent className="p-0 text-center space-y-4">
+                <div className="w-12 h-12 mx-auto bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                  <Book className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="text-lg font-semibold text-foreground">Reading & Research</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  Your interests, learning patterns, and intellectual curiosities.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </section>
 
@@ -114,6 +202,140 @@ const Index = () => {
                 <p className="text-muted-foreground leading-relaxed">
                   Whether you're brainstorming a new project or drafting content, Vyasthi acts as your creative partner, helping to ignite and organize your best ideas.
                 </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      <Separator className="my-16" />
+
+      {/* Beyond ChatGPT Section */}
+      <section className="py-24 px-4 bg-gradient-to-b from-card/20 to-transparent">
+        <div className="container max-w-5xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-light text-center mb-8 text-foreground">
+            Beyond conversation. Into action.
+          </h2>
+          <p className="text-lg text-center mb-16 text-muted-foreground max-w-3xl mx-auto">
+            While ChatGPT offers brilliant conversations, Vyasthi becomes an extension of you—acting autonomously in your digital world.
+          </p>
+          
+          <div className="grid md:grid-cols-2 gap-12">
+            <div className="space-y-6">
+              <div className="flex items-start space-x-4">
+                <div className="w-6 h-6 bg-muted rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <MessageSquare className="w-3 h-3 text-muted-foreground" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-foreground mb-2">ChatGPT</h3>
+                  <p className="text-muted-foreground text-sm">Responds when you ask, offers advice and information, but requires your constant input to take action.</p>
+                </div>
+              </div>
+              
+              <div className="bg-muted/30 p-4 rounded-lg">
+                <p className="text-sm text-muted-foreground italic">
+                  "Can you help me write an email to reschedule my meeting?"
+                </p>
+                <p className="text-sm text-foreground mt-2">
+                  → Provides a draft you still need to send yourself
+                </p>
+              </div>
+            </div>
+
+            <div className="space-y-6">
+              <div className="flex items-start space-x-4">
+                <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <Sparkles className="w-3 h-3 text-primary-foreground" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-foreground mb-2">Vyasthi</h3>
+                  <p className="text-muted-foreground text-sm">Acts autonomously in your voice, manages your digital life, and takes real action while you focus on what matters.</p>
+                </div>
+              </div>
+              
+              <div className="bg-primary/10 p-4 rounded-lg border border-primary/20">
+                <p className="text-sm text-foreground">
+                  Notices your meeting conflict, automatically drafts and sends a rescheduling email in your voice, finds alternative times that work for everyone, and updates your calendar—all without you lifting a finger.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Separator className="my-16" />
+
+      {/* Proactive Examples Section */}
+      <section className="py-24 px-4">
+        <div className="container max-w-6xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-light text-center mb-8 text-foreground">
+            Anticipating your needs before you know them.
+          </h2>
+          <p className="text-lg text-center mb-16 text-muted-foreground max-w-3xl mx-auto">
+            Vyasthi doesn't wait for commands—it observes, learns, and acts proactively to smooth your path.
+          </p>
+          
+          <div className="space-y-8">
+            <Card className="p-8 border-0 shadow-lg">
+              <CardContent className="p-0">
+                <div className="flex items-start space-x-6">
+                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Clock className="w-6 h-6 text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-foreground mb-3">Morning Flow</h3>
+                    <p className="text-muted-foreground mb-4">
+                      At 6:30 AM, Vyasthi notices unusual traffic on your route to work and automatically sends a gentle notification suggesting you leave 15 minutes earlier. It also orders your usual coffee for pickup, knowing you'll need the extra time for your important presentation.
+                    </p>
+                    <div className="bg-card/50 p-3 rounded-lg">
+                      <p className="text-sm text-foreground italic">
+                        "Good morning! I've noticed heavy traffic on Oak Street. Your coffee will be ready at 7:45 AM, giving you time for a calm commute to your 9 AM presentation. You've got this! 🌟"
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="p-8 border-0 shadow-lg">
+              <CardContent className="p-0">
+                <div className="flex items-start space-x-6">
+                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Mail className="w-6 h-6 text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-foreground mb-3">Relationship Care</h3>
+                    <p className="text-muted-foreground mb-4">
+                      Remembering that your friend mentioned feeling overwhelmed last week, Vyasthi drafts a thoughtful check-in message and suggests sending flowers to their office—knowing their preference for sunflowers from previous conversations.
+                    </p>
+                    <div className="bg-card/50 p-3 rounded-lg">
+                      <p className="text-sm text-foreground italic">
+                        "I've prepared a message for Sarah and found a lovely sunflower arrangement that could be delivered to her office today. Would you like me to send both?"
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="p-8 border-0 shadow-lg">
+              <CardContent className="p-0">
+                <div className="flex items-start space-x-6">
+                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Calendar className="w-6 h-6 text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-foreground mb-3">Life Balance</h3>
+                    <p className="text-muted-foreground mb-4">
+                      Noticing you've had back-to-back meetings for three days, Vyasthi automatically blocks 30 minutes in your calendar for a walk, books your favorite massage therapist for the weekend, and suggests a quiet dinner spot for tonight.
+                    </p>
+                    <div className="bg-card/50 p-3 rounded-lg">
+                      <p className="text-sm text-foreground italic">
+                        "You've been running at full speed. I've carved out some breathing room in your schedule and made a few suggestions for recharging. Your well-being matters."
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </CardContent>
             </Card>
           </div>
